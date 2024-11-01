@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test for Learn for Everyone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Test for Learn for Everyone</div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </header>
+    <nav id="menu">
+        <ul>
+            <li><a href="#">منو</a></li>
+            <li><a href="#">پروفایل کاربر</a></li>
+        </ul>
+    </nav>
+    <main>
+        <button onclick="showLogin()">ورود</button>
+        <button onclick="showSignup()">ثبت‌نام</button>
+    </main>
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('login-modal')">&times;</span>
+            <h2>ورود</h2>
+            <form id="login-form">
+                <label for="username">نام کاربری:</label>
+                <input type="text" id="username" name="username">
+                <label for="password">رمز عبور:</label>
+                <input type="password" id="password" name="password">
+                <button type="submit">ورود</button>
+            </form>
+        </div>
+    </div>
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signup-modal')">&times;</span>
+            <h2>ثبت‌نام</h2>
+            <form id="signup-form">
+                <label for="new-username">نام کاربری جدید:</label>
+                <input type="text" id="new-username" name="new-username">
+                <label for="new-password">رمز عبور جدید:</label>
+                <input type="password" id="new-password" name="new-password">
+                <button type="submit">ثبت‌نام</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
